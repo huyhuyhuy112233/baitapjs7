@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS-Buổi 7</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 style="font-size: 50px; padding-bottom: 40px">
+        Cho Mảng Là: [12, 19, 20, 17, 41, 38, 45, -2, -6, -5, -4, -3, -10];
+      </h1>
+      <div class="row">
+        <div class="col-4">
+          <h3>Bài tập 1 : Tính Tổng Số Dương Trong Mảng</h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer"></div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-tinh-tong">
+                  Tổng là:
+                </button>
+              </div>
+              <div class="alert alert-success" id="ketquabai1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>Bài tập 2 : Đếm số nguyên dương trong mảng</h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer"></div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-dem-so">Đếm Số</button>
+              </div>
+              <div class="alert alert-success" id="ketquabai2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>Bài tập 3 : Tìm số nhỏ nhất trong mảng</h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer"></div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-tim-so">Tìm Số</button>
+              </div>
+              <div class="alert alert-success" id="ketquabai3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 100px">
+        <div class="col-6">
+          <h3>Bài tập 4 : Tìm số dương nhỏ nhất của mảng</h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer"></div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-so-duong">
+                  Số đó là:
+                </button>
+              </div>
+              <div class="alert alert-success" id="ketquabai4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>
+            Bài tập 5 : Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá
+            trị chẵn thì trả về -1.
+          </h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer"></div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-so-chan">
+                  Số đó là:
+                </button>
+              </div>
+              <div class="alert alert-success" id="ketquabai5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 100px">
+        <div class="col-6">
+          <h3>Bài tập 6: Hoán Vị</h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer">
+                <p>Vị trí thứ nhất</p>
+                <input type="number" id="soMot" />
+                <p>Vị trí thứ hai</p>
+                <input type="number" id="soHai" />
+              </div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-hoan-vi">
+                  Mảng sau khi hoán vị là:
+                </button>
+              </div>
+              <div class="alert alert-success" id="ketquabai6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Bài tập 7: Sắp xếp mảng tăng dần</h3>
+          <div class="form-group">
+            <div class="card">
+              <div class="card-footer"></div>
+              <div class="card-body">
+                <button class="btn btn-success" id="btn-sap-xep">
+                  Mảng sau sắp xếp là:
+                </button>
+              </div>
+              <div class="alert alert-success" id="ketquabai7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 100px">
+        <div class="col-12">
+          <h3>
+            Bài tập 8: Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có
+            số nguyên tố thì trả về - 1.
+          </h3>
+        </div>
+        <div class="form-group">
+          <div class="card">
+            <div class="card-footer"></div>
+            <div class="card-body">
+              <button class="btn btn-success" id="btn-nguyen-to">
+                Số nguyên tố đầu tiên là:
+              </button>
+            </div>
+            <div class="alert alert-success" id="ketquabai8"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12" style="padding-top: 100px">
+        <h3>
+          Bài tập 9: Cho thêm mảng[-1,1,-2,2,-3,3,-4,4,-5,5,6.5,7.5] . Mảng 1 và 2 có
+          tất cả bao nhiêu số nguyên?
+        </h3>
+        <div class="form-group">
+          <div class="card">
+            <div class="card-footer"></div>
+            <div class="card-body">
+              <button class="btn btn-success" id="btn-so-nguyen">
+                Có tất cả số nguyên là:
+              </button>
+            </div>
+            <div class="alert alert-success" id="ketquabai9"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12" style="padding-top: 100px">
+        <h3>
+          Bài tập 10: So sánh số lượng số dương và số lượng số âm xem số nào
+          nhiều hơn.
+        </h3>
+      </div>
+      <div class="form-group">
+        <div class="card">
+          <div class="card-footer"></div>
+          <div class="card-body">
+            <button class="btn btn-success" id="btn-so-sanh">
+              Số nhiều hơn là: :
+            </button>
+          </div>
+          <div class="alert alert-success" id="ketquabai10"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
